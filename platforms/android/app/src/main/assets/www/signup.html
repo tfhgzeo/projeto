@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- MetaDados -->
+
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    
+    <!-- MetaDados -->
+    
+    
+    <!-- Estilos -->
+
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/el-checkbox-master/dist/checkbox.css">
+    <link rel="stylesheet" href="css/css.gg-master/icons-compressed/icons.css">
+    <script src="https://kit.fontawesome.com/26defb4e11.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+
+    <!-- Estilos -->
+
+
+    <!-- Scripts -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
+
+    <script src="js/firebaseConfig.js"></script>
+    <script src="js/firebaseConfig.js"></script>
+    <script src="js/firebaseInit.js"></script>
+
+    <!-- Scripts -->
+
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="topBar">
+        <i class="fas fa-angle-left"></i>
+        <p><strong>Cadastre-se</strong></p>
+    </div>
+
+    <div class="formCadastro">
+        <form id="form">
+            <div class="name">
+                <i class="far fa-user"></i><input type="text" name="nome" id="nome" placeholder="Nome"><br>
+            </div>
+
+            <div class="email">
+                <i class="far fa-envelope"></i><input type="email" name="email" id="email" placeholder="E-mail"><br>
+            </div>
+            
+            <div class="password">
+                <i class="fas fa-unlock-alt"></i><input type="password" name="senha" id="senha"
+                    placeholder="Crie uma senha">
+            </div>
+
+            <div class="passwordC">
+                <i class="fas fa-unlock-alt"></i><input type="password" name="senhaC" id="senhaC"
+                    placeholder="Confirme sua Senha">
+            </div>
+        </form>
+    </div>
+    <div class="receberEmailClass">
+        <legend>Rebecer Ofertas por email</legend><label class="el-switch el-switch-sm receberEmail">
+            <input type="checkbox" name="switch">
+            <span class="el-switch-style"></span>
+        </label>
+    </div>
+    <div class="btnCadastro">
+        <button id="btnCadastrar"><strong>Cadastrar</strong></button>
+    </div>
+
+    <div class="load"> <i class="fa fa-cog fa-spin fa-5x fa-fw"></i><span class="sr-only">Loading...</span> </div>
+
+    <script src="js/signup.js"></script>
+</body>
+
+</html>

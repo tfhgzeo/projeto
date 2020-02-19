@@ -1,0 +1,113 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topBar {
+    background-color: #6E0099;
+    height: 50px;
+    border-radius: 0 0 20px 20px;
+}
+
+.topBar i {
+    color: white;
+    padding-top: 33px;
+    margin: 0;
+    position: relative;
+    float: left;
+    line-height: 50px;
+    left: 15px;
+    outline: none !important;
+    border: none;
+}
+
+.gg-arrow-left-r {
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 22px;
+
+}
+
+.topBar p {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    color: white;
+    margin-left: 50%;
+    left: -40px;
+    line-height: 50px;
+}
+
+.formLogin {
+    text-align: center;
+    padding-top: 40%;
+}
+
+.formLogin input {
+    color: black;
+    width: 80%;
+    border-radius: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: left;
+    padding-left: 5%;
+    height: 60px;
+    background-color: rgb(226, 226, 226);
+    margin-top: 10%;
+    outline: none;
+}
+
+.btnLogar {
+    text-align: center;
+}
+
+.btnLogar button {
+    border: none;
+    width: 80%;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #6E0099;
+    color: white;
+    outline: none;
+}
+
+.ldm {
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 70px;
+    font-size: 11px;
+}
+
+.CC {
+    font-size: 11px;
+    padding-top: 38px;
+    padding-left: 67px;
+    float: left;
+}
+
+.ES {
+    font-size: 11px;
+    padding-top: 38px;
+    padding-left: 67px;
+    float: right;
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+    padding-right: 5px;
+}
+
+.fa-unlock-alt:before {
+    content: "\f13e";
+    padding-right: 5px;
+    padding-top: 24px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

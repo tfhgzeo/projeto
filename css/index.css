@@ -1,0 +1,39 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    font: normal 20px arial;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+#cabecalho {
+    float: top;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    background-color: cadetblue;
+}
+
+#cabecalho #ajuda {
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    overflow: auto;
+    float: left;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#cabecalho #entrar {
+    color: white;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    float: center;
+}

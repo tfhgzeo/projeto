@@ -1,0 +1,104 @@
+/* TAGS */
+body {
+    margin: 0%;
+    padding: 0%;
+    font: normal 20px arial;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+/* ID'S */
+
+#cabecalho {
+    float: top;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #262E40;
+}
+
+#cabecalho #ajuda {
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    float: left;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 50px;
+    margin-left: 10px;
+}
+
+#cabecalho #entrar {
+    position: absolute;
+    color: white;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    line-height: 50px;
+    left: 46%;
+}
+
+#btn-Facebook {
+    border: none;
+    color: white;
+    background-color: rgb(52, 102, 184);
+    width: 100%;
+    padding: 0;
+    height: 30px;
+    margin-top: 30px;
+    font-size: large;
+}
+
+#fb-logo {
+    position: relative;
+    overflow: auto;
+    float: left;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    left: 10%;
+}
+
+#btn-Google {
+    border: none;
+    color: white;
+    background-color: #3578E5;
+    width: 100%;
+    padding: 0;
+    height: 30px;
+    margin-top: 30px;
+    font-size: large;
+}
+
+#gl-logo {
+    position: relative;
+    overflow: auto;
+    float: left;
+    width: 25px;
+    height: 25px;
+    left: 10%;
+}
+
+/* CLASS */
+
+.logo-img {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border: solid 1px black;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: 15%;
+}
+
+.box-login-top {
+    position: relative;
+    position: absolute;
+    width: 80%;
+    height: 50px;
+    left: 50%;
+    margin-left: -40%;
+}
