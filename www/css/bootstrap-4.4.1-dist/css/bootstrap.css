@@ -572,11 +572,12 @@ pre code {
 }
 
 .container {
-  width: 100%;
+  text-align: center;
+  width: 80%;
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-left: 10%;
+  margin-top: 5%;
 }
 
 @media (min-width: 576px) {
