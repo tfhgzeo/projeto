@@ -13,6 +13,7 @@
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
   "dependencies": {
+    "bootstrap-icons": "^1.0.0-alpha2",
     "cordova-android": "^8.1.0",
     "cordova-browser": "^6.0.0",
     "element-ui": "^2.13.0"

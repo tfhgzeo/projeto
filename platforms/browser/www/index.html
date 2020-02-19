@@ -7,33 +7,53 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
     <link rel="stylesheet" href="css/index.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="css/el-checkbox-master/dist/checkbox.css">
+    <link rel="stylesheet" href="css/css.gg-master/icons-compressed/icons.css">
+    <script src="https://kit.fontawesome.com/26defb4e11.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <title>Index</title>
 </head>
 
 <body>
-    <div class="container">
 
-        <div class="cabecalho">
-            <header id="cabecalho">
-                <p id="ajuda">ajuda</p>
-                <p id="entrar">Entrar</p>
-            </header>
-        </div>
-
-        <div class="logo-img">
-            <img src="img/logo_temp.svg" alt="Logo da +Promo" width="200px" height="200px">
-        </div>
-
-        <div class="box-login-top">
-            <button id="btn-Facebook"><div id="fb-logo"></div>Entrar com o FaceBook </button>
-            <button id="btn-Google"><div id="gl-logo"><img src="/img/gl-logo.png" alt="Logo da Google" width="20px" height="20px"></div> Entrar com o Google </button>
-        </div>
-
-        <div class="box-login-bottom">
-
-        </div>
+    <div class="cabecalho">
+        <header id="cabecalho">
+            <p id="voltar">Voltar</p>
+            <p id="entrar"><strong>Entrar</strong></p>
+        </header>
     </div>
 
+    <div class="logoImg">
+        <img src="img/logo_temp.svg" alt="Logo da +Promo" width="150px" height="150px">
+    </div>
+
+    <div class="box-login-top">
+        <button id="btn-Facebook">
+            <div id="fb-logo"></div>Entrar com o FaceBook
+        </button>
+        <button id="btn-Google">
+            <div id="gl-logo"><img src="img/gl-logo.png" alt="Logo da Google" width="20px" height="20px"></div>
+            Entrar com o Google
+        </button>
+
+        <div class="email">
+            <p id="receberEmail">Receber ofertas por email</p>
+            <label class="el-switch el-switch-sm switchButton">
+                <input type="checkbox" name="switch">
+                <span class="el-switch-style"></span>
+            </label>
+        </div>
+
+    </div>
+
+    <fieldset>
+        <legend>OU</legend>
+    </fieldset>
+    
+    <div class="box-login-bottom">
+        <button id="btnCadastrar"><strong>Cadastre-se</strong></button>
+        <button id="btnEntrar"><Strong>Entrar</Strong></button>
+    </div>
     <script src="js/index.js"></script>
 </body>
 
