@@ -5301,6 +5301,7 @@ input[type="button"].btn-block {
 
 .card-text:last-child {
   margin-bottom: 0;
+  color: rgb(119, 119, 119);
 }
 
 .card-link:hover {

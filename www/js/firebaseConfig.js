@@ -9,4 +9,3 @@ var firebaseConfig = {
     appId: "1:200360879035:web:5230d7b93ca56003c0da9e",
     measurementId: "G-DER6PCVSQM"
 };
-

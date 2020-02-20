@@ -1,9 +1,21 @@
+/* TAG */
+
 body,
 html {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* TAG */
+
+
+/* CLASS */
 
 .topBar {
     background-color: #6E0099;
@@ -43,22 +55,19 @@ html {
 
 .formLogin {
     text-align: center;
-    padding-top: 40%;
+    padding-top: 20%;
 }
 
 .formLogin input {
     color: black;
     width: 80%;
     border-radius: 50px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border: none;
     text-align: left;
-    padding-left: 5%;
-    height: 60px;
+    height: 50px;
     background-color: rgb(226, 226, 226);
-    margin-top: 10%;
     outline: none;
+    margin-left: 10px;
 }
 
 .btnLogar {
@@ -75,26 +84,37 @@ html {
     outline: none;
 }
 
-.ldm {
+.lembrarDeMim {
     padding-left: 40px;
-    padding-top: 10px;
+    padding-top: 5%;
     padding-bottom: 70px;
-    font-size: 11px;
+    font-size: 13px;
 }
 
-.CC {
-    font-size: 11px;
-    padding-top: 38px;
-    padding-left: 67px;
+.lembrarDeMim legend {
     float: left;
+    margin-right: 10px;
 }
 
-.ES {
+.naoTemConta {
     font-size: 11px;
-    padding-top: 38px;
-    padding-left: 67px;
-    float: right;
+    margin-top: 10%;
+    margin-left: 10%;
+    float: left;
+    border: solid 1px #6E0099;
+    color: #6E0099;
+    border-radius: 50px;
 }
+
+.esqueciMinhaSenha {
+    font-size: 11px;
+    margin-top: 10%;
+    margin-right: 10%;
+    float: right;
+    border: solid 1px #6E0099;
+    color: #6E0099;
+    border-radius: 50px;
+} 
 
 .fa-envelope:before {
     content: "\f0e0";
@@ -107,7 +127,19 @@ html {
     padding-top: 24px;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+.email, .senha {
+    background-color: rgb(226, 226, 226);
+    height: 60px;
+    border-radius: 50px;
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    line-height: 60px;
 }
+
+/* CLASS */
+
+
+/* ID */
+
+/* ID */
