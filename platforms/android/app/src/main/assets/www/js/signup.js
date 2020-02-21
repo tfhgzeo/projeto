@@ -38,7 +38,7 @@ cadastrar.addEventListener("click", function () {
         document.querySelector(".name").classList.remove("elementoInvalido");
         nome.placeholder = "Nome";;
         return false;
-    } 
+    }
 
     if (emailValue.length == 0) {
         document.querySelector(".email").classList.add("elementoInvalido");

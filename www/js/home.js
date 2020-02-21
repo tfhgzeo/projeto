@@ -26,11 +26,10 @@ produtosRef.where("nome", "==", "Iphone 11")
             document.querySelector(".card-title").textContent = doc.data().nome;
             var img = document.querySelector(".card-img");
             var imgUrl = doc.data().img;
-            var descricao = doc.data().descricao;
-            console.log(doc.data().img);
-            var card_description = document.querySelector(".card-text");
-            card_description.textContent = descricao;
             img.src = imgUrl;
+            var descricao = doc.data().descricao;
+            var card_description = document.querySelector(".card-text");
+            card_description.textContent = descriscao;
         })
     })
     .catch(function (error) {

@@ -1,5 +1,5 @@
 // Initializa o Firebase
 function onLoadFunction(){
-    firebase.initializeApp(fbCfirebaseConfigonfig);
+    firebase.initializeApp(firebaseConfig);
     firebase.analytics();
 }

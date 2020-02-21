@@ -5,8 +5,6 @@ html {
     margin: 0%;
     padding: 0%;
     font: normal 20px arial;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    outline: none;
 }
 
 body {

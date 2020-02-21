@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/el-checkbox-master/dist/checkbox.css">
     <script src="https://kit.fontawesome.com/26defb4e11.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 
     <!-- Estilos -->
 
@@ -25,6 +26,7 @@
 
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
 
     <script src="js/firebaseConfig.js"></script>
     <script src="js/firebaseConfig.js"></script>
@@ -49,11 +51,22 @@
 <body>
 
     <div class="topBar">
-
-        <i class="fas fa-bars" id="hamburgerMenu"></i>
-
+        <svg class="bi"></svg>
     </div>
-    <div class="container">      
+    <div class="container">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/home.js"></script>

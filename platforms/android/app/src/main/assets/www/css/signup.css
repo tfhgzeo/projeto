@@ -7,10 +7,6 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
 /* CLASS */
 
 .topBar {
