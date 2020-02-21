@@ -43,13 +43,6 @@ img {
 
 .card {
     margin-bottom: 10px;
-
-}
-
-.card img {
-    position: relative;
-    left: 50%;
-margin-left: -80px;
 }
 
 .menu {
