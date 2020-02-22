@@ -750,6 +750,29 @@ pre code {
   padding-left: 15px;
 }
 
+.col-md-8-teste{
+  position: relative;
+  width: 70%;
+  padding-right: 15px;
+  padding-left: 15px;
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+.col-md-4-teste {
+  position: relative;
+  width: 20%;
+  height: 80%;
+  padding-right: 15px;
+  padding-left: 15px;
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  margin: 0;
+  margin-top: 10%;
+}
+
 .col {
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
@@ -5287,11 +5310,13 @@ input[type="button"].btn-block {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   min-height: 1px;
-  padding: 1.25rem;
+  width: 100%;
+  float: right;
 }
 
 .card-title {
   margin-bottom: 0.75rem;
+  width: 70%;
 }
 
 .card-subtitle {

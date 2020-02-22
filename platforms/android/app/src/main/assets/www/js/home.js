@@ -24,13 +24,19 @@ produtosRef.where("nome", "==", "Iphone 11")
         snapshot.forEach(function (doc) {
             console.log(doc.id, ' => ', doc.data());
             document.querySelector(".card-title").textContent = doc.data().nome;
+            
             var img = document.querySelector(".card-img");
             var imgUrl = doc.data().img;
-            var descricao = doc.data().descricao;
-            console.log(doc.data().img);
-            var card_description = document.querySelector(".card-text");
-            card_description.textContent = descricao;
             img.src = imgUrl;
+            
+            var descricao = doc.data().descricao;
+            var cardDescription = document.querySelector(".card-text");
+            cardDescription.textContent = descricao;
+
+            var preco = doc.data().preco;
+            var cardPreco = document.querySelector(".preco");
+            cardPreco.textContent = "R$ "+preco;
+
         })
     })
     .catch(function (error) {

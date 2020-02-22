@@ -45,6 +45,11 @@ img {
     margin-bottom: 10px;
 }
 
+.card-img {
+    width: 20%;
+    height: 300px ;
+}
+
 .menu {
     color: white;
     line-height: 50px;

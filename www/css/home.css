@@ -27,28 +27,72 @@ img {
     height: 50px;
 }
 
-.topBar #hamburgerMenu {
-    line-height: 50px;
+.menuHamburger {
+    position: relative;
+    font-size: 25px;
     float: left;
-    margin: 0;
-    margin-left: 15px;
-    width: 20px;
     color: white;
+    top: 50%;
+    margin-top: -12.5px;
+    left: 15px;
 }
 
-.btnColor {
+.logo {
+    position: relative;
+    float: left;
+    left: 25%;
+    line-height: 50px;
     color: white;
-    background-color: #6E0099;
+    font-size: 30px;
+}
+
+.pesquisa {
+    position: relative;
+    float: right;
+    font-size: 25px;
+    color: white;
+    top: 50%;
+    margin-top: -12.5px;
+    right: 70px;
+}
+
+.carrinho {
+    position: relative;
+    float: right;
+    font-size: 25px;
+    color: white;
+    top: 50%;
+    margin-top: -12.5px;
+    right: px;  
 }
 
 .card {
     margin-bottom: 10px;
 }
 
-.menu {
-    color: white;
-    line-height: 50px;
+.card-img {
+    width: 20%;
+    height: 300px;
+    padding-bottom: 10px;
 }
+
+.nomeProduto {
+    margin-top: 20px;
+} 
+
+.descricaoProduto {
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 20px;
+} 
+
+.precoProduto {
+    margin-top: 15px;
+    font-size: 20px;
+    color: black;
+}
+
 
 /* CLASS */
 
