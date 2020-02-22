@@ -44,24 +44,41 @@ function cardInformations() {
 
 }
 
-function cardtest() {
-    var db = firebase.firestore(); /* Variavel do Firesore (Banco de dados ) */
+function criarCards() {
+    let db = firebase.firestore();
 
-    var produtosRef = db.collection("produtos");
+    let produtosRef = db.collection("produtos").limit(3);
 
     produtosRef
-    .get()
-    .then(function (snapshot){
-        var tamanho = snapshot.size;
-        console.log(tamanho)
-        for (var x = 0; x < tamanho; x++) {
-            console.log(snapshot.docs[x].data().produto);
-        }
+        .get()
+        .then(function (snapshot) {
+            var tamanho = snapshot.size;
+            for (var x = 0; x < tamanho; x++) {
+                console.log(snapshot.docs[x]);
+                var doc = snapshot.docs[x];
+            }
 
-    })
+            for(var x = 0; x < 1; x++){
+                var doc = snapshot.docs[x];
+
+                adiconarCard(doc.produto, doc.descricao, doc.preco, doc.img)
+            }
+        })
 }
 
+function cardtest() {
+    let db = firebase.firestore(); /* Variavel do Firesore (Banco de dados ) */
 
-function name(params) {
-    
+    let produtosRef = db.collection("produtos").limit(3);
+
+    produtosRef
+        .get()
+        .then(function (snapshot) {
+            var tamanho = snapshot.size;
+            console.log(tamanho)
+            for (var x = 0; x < tamanho; x++) {
+                console.log(snapshot.docs[x].data().produto);
+            }
+
+        })
 }
