@@ -16,7 +16,7 @@ function cardInformations() {
 
     var produtosRef = db.collection("produtos");
 
-    produtosRef.where("nome", "==", "Iphone 11")
+    produtosRef.where("nome", "==", " 11")
         .get()
         .then(function (snapshot) {
             snapshot.forEach(function (doc) {
@@ -34,26 +34,34 @@ function cardInformations() {
                 var cardPreco = document.querySelector(".precoProduto");
                 cardPreco.textContent = "R$ " + preco;
 
-           })
+            })
         })
         .catch(function (error) {
             console.log("Error getting documents: ", error);
         });
 
-        cardClicavel(); 
-    
+    cardClicavel();
+
 }
 
 function cardtest() {
     var db = firebase.firestore(); /* Variavel do Firesore (Banco de dados ) */
 
-    var produtosRef = db.collection("produtos").where("nome", "==", "Iphone 11");
-    var tamanhoDoBanco = produtosRef.length;
-    console.log(tamanhoDoBanco);
-    
-    
-    for(var x = 0; x < tamanhoDoBanco; x++){
-        console.log(produtosRef.get);
-    }
+    var produtosRef = db.collection("produtos");
+
+    produtosRef
+    .get()
+    .then(function (snapshot){
+        var tamanho = snapshot.size;
+        console.log(tamanho)
+        for (var x = 0; x < tamanho; x++) {
+            console.log(snapshot.docs[x].data().produto);
+        }
+
+    })
+}
+
+
+function name(params) {
     
 }
