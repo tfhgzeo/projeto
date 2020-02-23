@@ -64,11 +64,7 @@ img {
     color: white;
     top: 50%;
     margin-top: -12.5px;
-    right: px;  
-}
-
-.card {
-    margin-bottom: 10px;
+    right: px;
 }
 
 .card-img {
@@ -77,17 +73,39 @@ img {
     padding-bottom: 10px;
 }
 
+.cardTop {
+    display:inline-block;
+    height: 140px;
+
+}
+
+.cards {
+    width: 100%;
+    height: 160px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+.card {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.cards::-webkit-scrollbar {
+    display: none;
+}
+
 .nomeProduto {
     margin-top: 20px;
     width: 80%;
-} 
+}
 
 .descricaoProduto {
     margin-top: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
     height: 20px;
-} 
+}
 
 .precoProduto {
     margin-top: 15px;

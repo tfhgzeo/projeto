@@ -1,5 +1,9 @@
 function adiconarCard(produto, descricao, preco, img, id) {
-    var container = document.querySelector(".container");
+    var cards = document.querySelector(".cards");
+
+    var container = document.createElement("div");
+    container.classList.add("container");
+    container.classList.add("cardTop");
 
     var rowPrimary = document.createElement("div")
     rowPrimary.classList.add("row");
@@ -62,5 +66,5 @@ function adiconarCard(produto, descricao, preco, img, id) {
 
     /* Adicionando o card ao Container */
     container.appendChild(rowPrimary);
-
+    cards.appendChild(container);
 }

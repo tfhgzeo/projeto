@@ -1,14 +1,12 @@
 /* Funçao de click para todos os cards */
 function cardClicavel() {
-    var card = document.querySelectorAll(".card"); /* Cria uma variavel de todos os cards na tela */
+    var cards = document.querySelectorAll(".card"); /* Cria uma variavel de todos os cards na tela */
     var cardId = document.querySelectorAll(".nomeProduto");
 
-    for (var i = 0; i < card.length; i++) {
+    for (var i = 0; i < cards.length; i++) {
         var id = cardId[i].id;
-        console.log(id)
-        card[i].addEventListener('click', function () {
-            alert(cardId[i].id);
-        })
+        console.log(id);
+        
     }
 }
 

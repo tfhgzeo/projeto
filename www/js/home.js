@@ -1,3 +1,3 @@
 onLoadFunction();
 
-criarCards();
+/* criarCards(); */
