@@ -1,1 +1,3 @@
 onLoadFunction();
+
+criarCards();

@@ -1,4 +1,4 @@
-function adiconarCard() {
+function adiconarCard(produto, descricao, preco, img, id) {
     var container = document.querySelector(".container");
 
     var rowPrimary = document.createElement("div")
@@ -16,27 +16,32 @@ function adiconarCard() {
     var imgBox = document.createElement("div");
     imgBox.classList.add("col-md-4-teste");
 
-    var imgCard = document.createElement("div");
+    var imgCard = document.createElement("img");
     imgCard.classList.add("card-img");
     imgCard.classList.add("h-25");
+    imgCard.src = img;
 
     var informationBox = document.createElement("div");
     informationBox.classList.add("col-md-8-teste");
 
     var cardInformationBody = document.createElement("div");
     cardInformationBody.classList.add("card-body");
-    
-    var cardTitle = document.createElement("div"); 
+
+    var cardTitle = document.createElement("h5");
     cardTitle.classList.add("card-title");
     cardTitle.classList.add("nomeProduto")
+    cardTitle.textContent = produto;
+    cardTitle.id = id;
 
-    var cardDescription = document.createElement("div");
+    var cardDescription = document.createElement("p");
     cardDescription.classList.add("card-text");
     cardDescription.classList.add("descricaoProduto");
+    cardDescription.textContent = descricao;
 
-    var cardPreco = document.createElement("div");
+    var cardPreco = document.createElement("p");
     cardPreco.classList.add("card-text");
     cardPreco.classList.add("precoProduto");
+    cardPreco.textContent = "R$ " + preco;
 
     /* Adicionando as informações ao card */
     cardInformationBody.appendChild(cardTitle);
