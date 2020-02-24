@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
+  --primary: #6E0099;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -18,7 +19,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #007bff;
+  --primary: #6E0099;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -572,12 +573,11 @@ pre code {
 }
 
 .container {
+  position: relative;
   text-align: center;
   width: 80%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-left: 10%;
   margin-top: 5%;
+  left: 10%;
 }
 
 @media (min-width: 576px) {
@@ -659,7 +659,7 @@ pre code {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
+  margin-right: 0;
   margin-left: -15px;
 }
 
@@ -770,7 +770,6 @@ pre code {
   flex: 0 0 33.333333%;
   max-width: 33.333333%;
   margin: 0;
-  margin-top: 10%;
 }
 
 .col {
@@ -5287,8 +5286,10 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  width: 100%;
+
 }
 
 .card>hr {
@@ -5316,7 +5317,7 @@ input[type="button"].btn-block {
 
 .card-title {
   margin-bottom: 0.75rem;
-  width: 70%;
+  width: 100%;
 }
 
 .card-subtitle {
@@ -5326,7 +5327,7 @@ input[type="button"].btn-block {
 
 .card-text:last-child {
   margin-bottom: 0;
-  color: rgb(119, 119, 119);
+  color: black;
 }
 
 .card-link:hover {

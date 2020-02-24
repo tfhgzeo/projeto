@@ -16,6 +16,10 @@ img {
     margin-top: 10px;
 }
 
+hr {
+    background-color: black;
+}
+
 /* TAGS */
 
 /* =========================================================================================================== */
@@ -23,37 +27,91 @@ img {
 /* CLASS */
 
 .topBar {
-    background-color: #6E0099;
+    background-color: var(--primary);
     height: 50px;
+    border-radius: 0 0 20px 20px;
 }
 
-.topBar #hamburgerMenu {
-    line-height: 50px;
+.menuHamburger {
+    position: relative;
+    font-size: 25px;
     float: left;
-    margin: 0;
-    margin-left: 15px;
-    width: 20px;
     color: white;
+    top: 50%;
+    margin-top: -12.5px;
+    left: 15px;
 }
 
-.btnColor {
+.logo {
+    position: relative;
+    float: left;
+    left: 25%;
+    line-height: 50px;
     color: white;
-    background-color: #6E0099;
+    font-size: 30px;
 }
 
-.card {
-    margin-bottom: 10px;
+.pesquisa {
+    position: relative;
+    float: right;
+    font-size: 25px;
+    color: white;
+    top: 50%;
+    margin-top: -12.5px;
+    right: 70px;
+}
+
+.carrinho {
+    position: relative;
+    float: right;
+    font-size: 25px;
+    color: white;
+    top: 50%;
+    margin-top: -12.5px;
+    right: px;
 }
 
 .card-img {
     width: 20%;
-    height: 300px ;
+    height: 300px;
+    padding-bottom: 10px;
 }
 
-.menu {
-    color: white;
-    line-height: 50px;
+.cards {
+    width: 100%;
+    display:inline-block;
+    height: 150px;
+    overflow: hidden;
+    overflow-y: scroll;
 }
+
+.card {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.cards::-webkit-scrollbar {
+    display: none;
+}
+
+.nomeProduto {
+    margin-top: 20px;
+    width: 80%;
+}
+
+.descricaoProduto {
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 20px;
+}
+
+.precoProduto {
+    margin-top: 15px;
+    font-size: 20px;
+    color: black;
+}
+
 
 /* CLASS */
 
