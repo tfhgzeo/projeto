@@ -1,0 +1,180 @@
+/* TAGS */
+
+body,
+html {
+    margin: 0%;
+    padding: 0%;
+    font: normal 20px arial;
+}
+
+body {
+    position: relative;
+}
+
+fieldset {
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    width: 70%;
+    margin-left: 10%;
+}
+
+/* ID'S */
+
+#cabecalho {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #6E0099;
+    border-radius: 0 0 20px 20px;
+}
+
+#cabecalho #voltar {
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    float: left;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 50px;
+    margin-left: 10px;
+}
+
+#cabecalho #entrar {
+    position: absolute;
+    color: white;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    line-height: 50px;
+    left: 50%;
+    margin-left: -25px;
+}
+
+#btn-Facebook {
+    border: none;
+    color: white;
+    background-color: rgb(52, 102, 184);
+    width: 100%;
+    padding: 0;
+    height: 30px;
+    margin-top: 30px;
+    font-size: large;
+    border-radius: 50px;
+}
+
+#fb-logo {
+    position: relative;
+    overflow: auto;
+    float: left;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    left: 10%;
+}
+
+#btn-Google {
+    border: none;
+    color: white;
+    background-color: #3578E5;
+    width: 100%;
+    padding: 0;
+    height: 30px;
+    margin-top: 30px;
+    font-size: large;
+    border-radius: 50px;
+}
+
+#gl-logo {
+    position: relative;
+    overflow: auto;
+    float: left;
+    width: 25px;
+    height: 25px;
+    left: 10%;
+}
+
+#receberEmail {
+    overflow: auto;
+    font-size: medium;
+    overflow: auto;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#receberEmail label {
+    float: right;
+}
+
+#btnCadastrar {
+    background-color: #6E0099;
+    color: white;
+    font-size: large;
+    outline: none;
+    border-radius: 50px;
+}   
+
+#btnEntrar {
+    color: #6E0099;
+    font-size: Large;
+    background-color: white;
+    border: solid 2px #6E0099;
+    outline: none;
+    border-radius: 50px;
+}
+
+/* CLASS */
+
+.logoImg {
+    text-align: center;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border: solid 1px black;
+    left: 50%;
+    margin-left: -75px;
+    margin-top: 5%;
+}
+
+.box-login-top {
+    overflow: auto;
+    position: relative;
+    width: 80%;
+    left: 50%;
+    margin-left: -40%;
+}
+
+.box-login-bottom {
+    overflow: auto;
+}
+
+.box-login-bottom button {
+    width: 80%;
+    margin-left: 10%;
+    height: 50px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.switchButton {
+    float: right;
+    outline: none;
+}
+
+.email {
+    width: 100%;
+    height: 50px;
+}
+
+.email label {
+    margin-top: 11px;
+    margin-right: 5%;
+}
+
+.email p {
+    line-height: 50px;
+}

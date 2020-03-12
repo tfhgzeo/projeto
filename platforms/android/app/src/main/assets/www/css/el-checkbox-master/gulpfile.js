@@ -7,7 +7,7 @@ var basedir='';
 
 //default task
 gulp.task('default',['server','watch'],function(){
-	console.info("gulp start running！");
+	console.log("gulp start running！");
 });
 //web server
 gulp.task('server',function(){

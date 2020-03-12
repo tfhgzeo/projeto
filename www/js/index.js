@@ -1,14 +1,13 @@
-var btnAjuda = document.querySelector("#voltar");
-btnAjuda.addEventListener('click', function (){
-    window.location.href = "home.html";
+var cesta = document.querySelector("#cesta");
+cesta.addEventListener("click", () => {
+    window.location.href = "cesta.html";
 })
 
-var btnCadastrar = document.querySelector("#btnCadastrar");
-btnCadastrar.addEventListener("click", function () {
-    window.location.href = "signup.html";
+var menu = document.querySelector("#menu");
+menu.addEventListener("click", () => {
+    window.location.href = "opcoesLogin.html";
 })
 
-var btnEntrar = document.querySelector("#btnEntrar");
-btnEntrar.addEventListener("click", function () {
-    window.location.href = "login.html";
-})
+onLoadFunction();
+
+criarCards();
