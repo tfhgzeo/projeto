@@ -1,13 +1,33 @@
-var cesta = document.querySelector("#cesta");
-cesta.addEventListener("click", () => {
-    window.location.href = "cesta.html";
+document.addEventListener('DOMContentLoaded', function (event) {
+
+    document.querySelector(".divLocalizacao").style.display="none";
+
+    var cesta = document.querySelector("#cesta");
+    cesta.addEventListener("click", () => {
+        window.location.href = "cesta.html";
+    })
+
+    var localiza = document.querySelector(".localizacao");
+    localiza.addEventListener("click", () => {
+        var divLocalizacao = document.querySelector(".divLocalizacao").style.display;
+
+        if (divLocalizacao == "none"){
+            document.querySelector(".divLocalizacao").style.display = "block";
+        }else{
+            document.querySelector(".divLocalizacao").style.display = "none";
+        }
+
+    });
+
+    var menu = document.querySelector("#menu");
+    menu.addEventListener("click", () => {
+        window.location.href = "opcoesLogin.html";
+    })
+
+    onLoadFunction();
+
+    criarCards();
+
+    console.log("Pagina Carregada com Sucesso");
+
 })
-
-var menu = document.querySelector("#menu");
-menu.addEventListener("click", () => {
-    window.location.href = "opcoesLogin.html";
-})
-
-onLoadFunction();
-
-criarCards();

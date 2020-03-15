@@ -13,12 +13,12 @@
 
     <!-- Meta Dados -->
 
+    
     <!-- Estilos -->
 
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/el-checkbox-master/dist/checkbox.css">
     <script src="https://kit.fontawesome.com/26defb4e11.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 
     <!-- Estilos -->
 
@@ -34,6 +34,7 @@
     <script src="js/firebaseAuth.js"></script>
 
     <!-- Firebase -->
+
 
     <!-- BootStrap -->
 
@@ -51,13 +52,14 @@
 
     <div class="topBar">
         <i class="fas fa-bars menuHamburger" id="menu"></i>
-        <p class="logo"> <strong>+PROMO</strong> </p>
+        <p class="localizacao" data-element=".divLocalizacao"> <strong>Sua localização </strong><i class="fas fa-sort-down" id="btnLocalizacao"></i> </p>
         <i class="fas fa-search pesquisa"></i>
         <i class="fas fa-shopping-basket" id="cesta"></i>
     </div>
-    <p class="TituloProdutosProximos">
-        Produtos conhecidos da região
-    </p>
+
+    <div class="divLocalizacao">
+    </div>
+
     <div class="cards"></div>
     <hr>
     <script src="js/criarCard.js"></script>
