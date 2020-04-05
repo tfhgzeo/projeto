@@ -19,7 +19,9 @@ img {
 
 /* TAGS */
 
+
 /* =========================================================================================================== */
+
 
 /* CLASS */
 
@@ -27,6 +29,7 @@ img {
     background-color: var(--primary);
     height: 50px;
     border-radius: 0 0 20px 20px;
+    display: block;
 }
 
 .menuHamburger {
@@ -42,7 +45,7 @@ img {
 .localizacao {
     position: relative;
     float: left;
-    left: 25%;
+    left: 15%;
     line-height: 50px;
     color: white;
     font-size: larger;
@@ -87,7 +90,7 @@ img {
 
 .cards {
     width: 100%;
-    display:inline-block;
+    display: inline-block;
     height: 150px;
     overflow: hidden;
     overflow-y: scroll;
@@ -109,6 +112,7 @@ img {
 
 .descricaoProduto {
     margin-top: 10px;
+    margin-bottom: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
     height: 20px;
@@ -125,7 +129,51 @@ img {
     float: left;
 }
 
+.divPesquisa {
+    background-color: var(--primary);
+    width: 100%;
+    height: 50px;
+    border-radius: 0 0 20px 20px;
+    border: none;
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}
+
+.sumir {
+    display: none;
+}
+
+.cancelar {
+    float: right;
+    margin-right: 10%;
+    margin-top: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.leftBar {
+    position: fixed;
+    float: left;
+    float: top;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+.barra {
+    position: relative;
+    width: 30%;
+    float: left;
+    height: 100vh;
+    background-color: black;
+}
+
+
 /* CLASS */
+
 
 /* =========================================================================================================== */
 
@@ -139,7 +187,19 @@ img {
     color: white;
     top: 50%;
     margin-top: -12.5px;
-    right: px;
 }
+
+#pesquisa {
+    position: relative;
+    width: 70%;
+    height: 40px;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+    top: 5px;
+    left: 5%;
+    outline: none;
+    padding-left: 5%;
+}
+
 
 /* IDs */

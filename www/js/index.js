@@ -1,6 +1,8 @@
-document.addEventListener('DOMContentLoaded', function (event) {
+onLoadFunction();
 
-    document.querySelector(".divLocalizacao").style.display="none";
+document.addEventListener('DOMContentLoaded', function(event) {
+
+    document.querySelector(".divLocalizacao").style.display = "none";
 
     var cesta = document.querySelector("#cesta");
     cesta.addEventListener("click", () => {
@@ -11,20 +13,43 @@ document.addEventListener('DOMContentLoaded', function (event) {
     localiza.addEventListener("click", () => {
         var divLocalizacao = document.querySelector(".divLocalizacao").style.display;
 
-        if (divLocalizacao == "none"){
+        if (divLocalizacao == "none") {
             document.querySelector(".divLocalizacao").style.display = "block";
-        }else{
+        } else {
             document.querySelector(".divLocalizacao").style.display = "none";
         }
 
     });
 
-    var menu = document.querySelector("#menu");
+    var menu = document.querySelector(".menuHamburger");
     menu.addEventListener("click", () => {
-        window.location.href = "opcoesLogin.html";
+        var menuBar = document.querySelector(".leftBar")
+        menuBar.classList.add("mostrar");
     })
 
-    onLoadFunction();
+    var pesquisar = document.querySelector(".pesquisa");
+    pesquisar.addEventListener("click", () => {
+
+        var divPesquisa = document.querySelector(".divPesquisa");
+        divPesquisa.classList.add("mostrar");
+
+        var topBar = document.querySelector(".topBar");
+        topBar.classList.add("sumir");
+
+        var inputPesquisa = document.querySelector("#pesquisa");
+        inputPesquisa.focus();
+
+    })
+
+    var cancelar = document.querySelector(".cancelar");
+    cancelar.addEventListener("click", () => {
+
+        var topBar = document.querySelector(".topBar");
+        topBar.classList.remove("sumir");
+
+        var divPesquisa = document.querySelector(".divPesquisa");
+        divPesquisa.classList.remove("mostrar");
+    })
 
     criarCards();
 
