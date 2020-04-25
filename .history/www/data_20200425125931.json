@@ -1,0 +1,9 @@
+/* data = [{"name" : "Ashwin", "age" : "20"},{"name" : "Abhinandan", "age" : "20"}]
+ */
+
+{
+    {
+        "name": "Gustavo",
+        "age": "20"
+    }
+}

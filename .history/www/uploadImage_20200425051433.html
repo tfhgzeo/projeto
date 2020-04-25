@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/uploadImage.css">
+
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
+
+    <script src="js/firebaseConfig.js"></script>
+    <script src="js/firebaseInit.js"></script>
+    <script src="js/firebaseAuth.js"></script>
+
+    <title>upload de imagens</title>
+</head>
+
+<body>
+    <!-- barra de carregamento-->
+    <progress value="0" max="100" id="uploader">0%</progress>
+    <input type="file" value="upload" id="fileButton" />
+
+    <script src="js/uploadImage.js"></script>
+</body>
+
+</html>

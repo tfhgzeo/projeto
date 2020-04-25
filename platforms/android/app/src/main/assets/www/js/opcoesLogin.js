@@ -12,3 +12,4 @@ var btnEntrar = document.querySelector("#btnEntrar");
 btnEntrar.addEventListener("click", function () {
     window.location.href = "login.html";
 })
+

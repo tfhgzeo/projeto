@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="css/el-checkbox-master/dist/checkbox.css">
+    <script src="https://kit.fontawesome.com/26defb4e11.js" crossorigin="anonymous"></script>
+
+    <!-- Firebase -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
+
+    <script src="js/firebaseConfig.js"></script>
+    <script src="js/firebaseInit.js"></script>
+    <script src="js/firebaseAuth.js"></script>
+
+    <!-- Firebase -->
+
+    <title>User</title>
+</head>
+
+<body>
+    <div class="topBar">
+        <i class="fas fa-chevron-left" id="voltar"></i>
+        <p>Olá, Rakel</p>
+    </div>
+    <div class="inf">
+        <p id="text1"><strong> INFORMAÇÔES PESSOAIS </strong></p>
+    </div>
+    <div class="formLogin">
+        <form id="form">
+            <div class="username">
+                <i class="far fa-user"></i><input type="text" name="username" id="username" placeholder="Nome De Usuário" readonly>
+            </div>
+            <div class="email">
+                <i class="far fa-envelope iconeEmail"></i><input type="text" name="Email" id="Email" placeholder="E-mail">
+            </div>
+            <div class="cpf">
+                <i class="fas fa-portrait iconeCpf"></i><input type="text" name="cpf" id="cpf" placeholder="CPF" readonly>
+            </div>
+            <div class="sexoDiv">
+                <p>Sexo</p>
+                <input type="radio" name="sexo" value="masculino" id="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" value="feminino" id="feminino">
+                <label for="feminino">Feminino</label>
+            </div>
+            <div class="dtnas">
+                <i class="far fa-user"></i><input type="text " name="dtnas" id="dtnas" placeholder="Data de nascimento" readonly>
+            </div>
+            <div class="telefone">
+                <i class="far fa-user"></i><input type="text" name="telefone" id="telefone" placeholder="Telefone" readonly>
+            </div>
+            <div class="endereco">
+                <i class="far fa-user"></i><input type="text" name="endereco" id="endereco" placeholder="Endereço" readonly>
+            </div>
+            <div class="checkDiv">
+               <p> <input type="checkbox" name="checks" value="check1" id="masculino">
+                <label for="masculino">Desativar Notificações</label></p>
+                <p> <input type="checkbox" name="checks" value="check2" id="masculino">
+                    <label for="masculino">Receber E-mails Promocionais</label></p>
+                    <p> <input type="checkbox" name="checks" value="check3" id="masculino">
+                        <label for="masculino">Receber notificações via WhatsApp</label></p>
+            </div>
+            
+        </form>
+    </div>
+
+    <div class="btnLogar">
+        <button id="btnLogar">Salvar Alterações</button>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>

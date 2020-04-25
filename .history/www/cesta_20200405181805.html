@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- Meta Dados -->
+
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <!-- Meta Dados -->
+
+
+    <!-- Estilos -->
+
+    <link rel="stylesheet" href="css/cesta.css">
+    <link rel="stylesheet" href="css/el-checkbox-master/dist/checkbox.css">
+    <script src="https://kit.fontawesome.com/26defb4e11.js" crossorigin="anonymous"></script>
+
+    <!-- Estilos -->
+
+
+    <!-- Firebase -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+
+    <script src="js/firebaseConfig.js"></script>
+    <script src="js/firebaseInit.js"></script>
+    <script src="js/firebaseAuth.js"></script>
+
+    <!-- Firebase -->
+
+
+    <title>Cesta</title>
+</head>
+
+<body>
+
+    <div class="topBar">
+        <i class="fas fa-chevron-left" id="voltar"></i>
+        <p>Cesta</p>
+    </div>
+
+    <div class="Cesta"></div>
+
+    <div class="TextBtnCesta">
+        <p id="textoCesta"><strong>Sua cesta está vazia</strong></p>
+        <p id="textoCesta2">Aparentemente você ainda não adicionou nada a sua cesta volte a tela inicial e faça sua
+            compra</p>
+        <button id="btnVoltar">Volte a comprar</button>
+    </div>
+
+    <script src="js/cesta.js"></script>
+
+</body>
+
+</html>

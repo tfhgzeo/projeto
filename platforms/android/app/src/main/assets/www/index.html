@@ -8,17 +8,16 @@
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
-    <meta name="viewport"
-        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 
     <!-- Meta Dados -->
+
 
     <!-- Estilos -->
 
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/el-checkbox-master/dist/checkbox.css">
     <script src="https://kit.fontawesome.com/26defb4e11.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 
     <!-- Estilos -->
 
@@ -28,12 +27,14 @@
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
 
     <script src="js/firebaseConfig.js"></script>
     <script src="js/firebaseInit.js"></script>
     <script src="js/firebaseAuth.js"></script>
 
     <!-- Firebase -->
+
 
     <!-- BootStrap -->
 
@@ -49,17 +50,34 @@
 
 <body>
 
-    <div class="topBar">
-        <i class="fas fa-bars menuHamburger" id="menu"></i>
-        <p class="logo"> <strong>+PROMO</strong> </p>
-        <i class="fas fa-search pesquisa"></i>
-        <i class="fas fa-shopping-basket" id="cesta"></i>
+    <div class="menu">
+        <div class="menuLeft"></div>
+        <div class="blur"></div>
     </div>
-    <p class="TituloProdutosProximos">
-        Produtos conhecidos da região
-    </p>
-    <div class="cards"></div>
-    <hr>
+
+    <div class="pagina">
+
+
+        <div class="topBar">
+            <i class="fas fa-bars menuHamburger" id="menu"></i>
+            <p class="localizacao" data-element=".divLocalizacao"> <strong>Sua localização </strong><i class="fas fa-sort-down" id="btnLocalizacao"></i> </p>
+            <i class="fas fa-search pesquisa"></i>
+            <i class="fas fa-shopping-basket" id="cesta"></i>
+        </div>
+
+        <div class="divPesquisa">
+            <form action="pesquisa.html" method="get">
+                <input type="text" id="pesquisa" name="pesquisa">
+                <i class="far fa-times-circle cancelar"></i>
+            </form>
+        </div>
+
+        <div class="divLocalizacao">
+        </div>
+
+        <div class="cards"></div>
+    </div>
+
     <script src="js/criarCard.js"></script>
     <script src="js/adicionarCard.js"></script>
     <script src="js/index.js"></script>

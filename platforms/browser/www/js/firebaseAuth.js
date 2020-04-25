@@ -63,7 +63,7 @@ function createUser(email, password, user) {
 
 function login(email, senha) {
 
-    firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)
+    firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
         .then(function () {
 
             firebase.auth().signInWithEmailAndPassword(email, senha)
@@ -127,4 +127,14 @@ function verificaLogin(user) {
 
             login(email, senha);
         })
+}
+
+function usuarioLogado() {
+    firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+            console.log("Usuario logado");
+        } else {
+            window.location.href = "login.html"
+        }
+    });
 }
